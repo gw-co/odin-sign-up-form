@@ -1,0 +1,107 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    /* border: 1px solid red; */
+
+    --minv: 100vmin;
+}
+
+@font-face{
+    font-family: Norse;
+    src: url(./Norse-Bold.otf);
+}
+
+.main-container{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+
+    .left{
+        background-image: url(./images/left-back-image.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* width: 32.5%; */
+        /* width: 40%; */
+        /* min-width: fit-content; */
+        min-height: 30vmin;
+        
+        flex: 1 1 auto;
+
+        & div{
+            background-color: rgba(0, 0, 0, 0.265);
+            margin-top: 15vmin;
+            /* height: 3em; */
+            padding: 10px;
+            color: white;
+            display: flex;
+            /* flex-wrap: wrap; */
+            align-items: center;
+            justify-content: center;
+            & img{
+                /* flex: 0 1 auto; */
+                width: 6rem;
+                /* scale: 0.25; */
+            }
+            font-size: 50px;
+            & h1{
+                /* margin-bottom: 0;
+                margin-top: 0px; */
+                margin: 10px;
+                font-family: Norse;
+            }
+        }
+    }
+    .right{
+        background-color: rgb(249, 249, 249);
+        padding: 50px;
+        width: 50%;
+        /* height: 100%; */
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & form{
+            margin: 30px -50px;
+            padding: 20px 50px;
+            background-color: white;
+            /* width: 100%; */
+            /* height: 250px; */
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            .input-pair{
+                width: 100%;
+                /* border: 1px solid red; */
+                .input-field{
+                    width: 300px;
+                    display: inline-block;
+                    margin-right: 50px;
+                    & *{
+                        display: block;
+                    }
+
+                    & input{
+                        width: 300px;
+                        height: 30px;
+                        border-radius: 5px;
+                        border: 1px solid rgb(212, 212, 212);
+                    }
+                }
+            }
+        }
+        & button{
+            width: 250px;
+            height: 50px;
+            border: 2px solid rgb(226, 146, 18);
+            border-radius: 5px;
+            background-color: rgb(181, 127, 21);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}
