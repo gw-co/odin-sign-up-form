@@ -5,53 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="main-container">
         <div class="left">
             <div>
                 <img src="./images/odin-lined.png" alt="">
-                <h1>HEADING</h1>
+                <h1>ODIN</h1>
             </div>
         </div>
         <div class="right">
             <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</h2>
             <h2>You <em>know</em> you want to.</h2>
             <form action="">
+                <h2>Let's do this!</h2>
                 <div class="input-pair">
                 <div class="input-field">
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name" required>
+                    <input type="text" id="first-name" name="first-name" placeholder="your name" required>
                 </div>
                 <div class="input-field">
                     <label for="second-name">LAST NAME</label>
-                    <input type="text" id="second-name" name="second-name">
+                    <input type="text" id="second-name" name="second-name" placeholder="your last name">
                 </div>
                 </div>
                 <div class="input-pair">
                 <div class="input-field">
                     <label for="mail">EMAIL</label>
-                    <input type="email" id="mail" name="mail" required>
+                    <input type="email" id="mail" name="mail" placeholder="example@mail.com" required>
                 </div>
                 <div class="input-field">
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="number" id="phone" name="phone">
+                    <input type="number" id="phone" name="phone" placeholder="your cell number">
                 </div>
                 </div>
                 <div class="input-pair">
                 <div class="input-field">
                     <label for="pass">PASSWORD</label>
-                    <input type="password" id="pass" name="pass" required>
+                    <input type="password" id="pass" name="pass" placeholder="a strong password" required>
                 </div>
                 <div class="input-field">
                     <label for="confirm-pass">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-pass" name="confirm-pass" required>
+                    <input type="password" id="confirm-pass" name="confirm-pass" placeholder="same password" required>
                 </div>
                 </div>
             </form>
             <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="">Log in</a></p>
+            <p>Already have an account? <b><a href="">Log in</a></b></p>
         </div>
     </div>
 </body>
