@@ -1,9 +1,6 @@
 body{
     font-family: sans-serif;
     margin: 0;
-    /* border: 1px solid red; */
-
-    --minv: 100vmin;
 }
 
 @font-face{
@@ -21,8 +18,6 @@ body{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        /* width: 32.5%; */
-        /* width: 40%; */
         min-width: 400px;
         min-height: 45vmin;
         
@@ -31,18 +26,14 @@ body{
         & div{
             background-color: rgba(0, 0, 0, 0.265);
             margin-top: 15vmin;
-            /* min-height: 30vmin; */
-            /* min-width: 300px; */
             padding: 10px;
             color: white;
             display: flex;
-            /* flex-wrap: wrap; */
             align-items: center;
             justify-content: center;
             font-size: 50px;
 
             & img{
-                /* flex: 0 1 auto; */
                 width: 6rem;
             }
             & h1{
@@ -53,11 +44,9 @@ body{
     }
     .right{
         background-color: rgb(249, 249, 249);
-        /* margin-top: 10px; */
         padding: 50px;
         padding-top: 10px;
         width: 40%;
-        /* height: 100%; */
         flex: 1 1 auto;
         display: flex;
         flex-direction: column;
@@ -78,7 +67,6 @@ body{
             }
             .input-pair{
                 width: calc(100% + 50px);
-                /* border: 1px solid red; */
 
                 .input-field{
                     width: 300px;
@@ -109,6 +97,9 @@ body{
                         outline: none;
                         border: 1px solid rgb(72, 142, 255);
                         box-shadow: 2px 2px 5px rgb(206, 206, 206);
+                    }
+                    & .same{
+                        border-color: orange;
                     }
                     & .error{
                         border-color: red;
